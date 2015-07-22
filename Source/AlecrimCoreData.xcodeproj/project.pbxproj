@@ -24,7 +24,21 @@
 		1464BD2E1B20FAB5007CD240 /* NSPredicateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1464BD2D1B20FAB5007CD240 /* NSPredicateExtensions.swift */; };
 		149733741B21F716000A0EDE /* FetchAsyncHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149733731B21F716000A0EDE /* FetchAsyncHandler.swift */; };
 		14CCE9261AC114DD00AE47F1 /* AlecrimCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CCE8A61AC10E5500AE47F1 /* AlecrimCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FD67A81B603E600038C575 /* AlecrimCoreData_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD67A71B603E600038C575 /* AlecrimCoreData_Tests.swift */; };
+		42FD67A91B603E600038C575 /* AlecrimCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CCE8C21AC10F4600AE47F1 /* AlecrimCoreData.framework */; };
+		42FD67B11B6043220038C575 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD67AF1B6043220038C575 /* Nimble.framework */; };
+		42FD67B31B6044980038C575 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD67B01B6043220038C575 /* Quick.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42FD67AA1B603E600038C575 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14CCE8981AC10E5500AE47F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14CCE8C11AC10F4600AE47F1;
+			remoteInfo = AlecrimCoreData;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1451E0151B29F7BA00689C58 /* ALCFetchedResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALCFetchedResultsController.swift; sourceTree = "<group>"; };
@@ -46,6 +60,12 @@
 		14CCE8A51AC10E5500AE47F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14CCE8A61AC10E5500AE47F1 /* AlecrimCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlecrimCoreData.h; sourceTree = "<group>"; };
 		14CCE8C21AC10F4600AE47F1 /* AlecrimCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlecrimCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42FD67A31B603E600038C575 /* AlecrimCoreData Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AlecrimCoreData Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42FD67A61B603E600038C575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42FD67A71B603E600038C575 /* AlecrimCoreData_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlecrimCoreData_Tests.swift; sourceTree = "<group>"; };
+		42FD67AF1B6043220038C575 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
+		42FD67B01B6043220038C575 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		4E4CC3B4073FAE22291D1A09 /* Pods_AlecrimCoreData_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlecrimCoreData_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +73,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FD67A01B603E600038C575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FD67B31B6044980038C575 /* Quick.framework in Frameworks */,
+				42FD67B11B6043220038C575 /* Nimble.framework in Frameworks */,
+				42FD67A91B603E600038C575 /* AlecrimCoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +156,9 @@
 			isa = PBXGroup;
 			children = (
 				14CCE8A31AC10E5500AE47F1 /* AlecrimCoreData */,
+				42FD67A41B603E600038C575 /* AlecrimCoreData Tests */,
 				14CCE8A21AC10E5500AE47F1 /* Products */,
+				AE446105C6F5EF10E462D298 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				14CCE8C21AC10F4600AE47F1 /* AlecrimCoreData.framework */,
+				42FD67A31B603E600038C575 /* AlecrimCoreData Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,6 +187,33 @@
 				14CCE8A51AC10E5500AE47F1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42FD67A41B603E600038C575 /* AlecrimCoreData Tests */ = {
+			isa = PBXGroup;
+			children = (
+				42FD67A71B603E600038C575 /* AlecrimCoreData_Tests.swift */,
+				42FD67A51B603E600038C575 /* Supporting Files */,
+			);
+			path = "AlecrimCoreData Tests";
+			sourceTree = "<group>";
+		};
+		42FD67A51B603E600038C575 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42FD67A61B603E600038C575 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE446105C6F5EF10E462D298 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42FD67AF1B6043220038C575 /* Nimble.framework */,
+				42FD67B01B6043220038C575 /* Quick.framework */,
+				4E4CC3B4073FAE22291D1A09 /* Pods_AlecrimCoreData_Tests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +248,24 @@
 			productReference = 14CCE8C21AC10F4600AE47F1 /* AlecrimCoreData.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		42FD67A21B603E600038C575 /* AlecrimCoreData Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42FD67AE1B603E600038C575 /* Build configuration list for PBXNativeTarget "AlecrimCoreData Tests" */;
+			buildPhases = (
+				42FD679F1B603E600038C575 /* Sources */,
+				42FD67A01B603E600038C575 /* Frameworks */,
+				42FD67A11B603E600038C575 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42FD67AB1B603E600038C575 /* PBXTargetDependency */,
+			);
+			name = "AlecrimCoreData Tests";
+			productName = "AlecrimCoreData Tests";
+			productReference = 42FD67A31B603E600038C575 /* AlecrimCoreData Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,6 +277,9 @@
 				TargetAttributes = {
 					14CCE8C11AC10F4600AE47F1 = {
 						CreatedOnToolsVersion = 6.3;
+					};
+					42FD67A21B603E600038C575 = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -215,12 +296,20 @@
 			projectRoot = "";
 			targets = (
 				14CCE8C11AC10F4600AE47F1 /* AlecrimCoreData */,
+				42FD67A21B603E600038C575 /* AlecrimCoreData Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		14CCE8C01AC10F4600AE47F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FD67A11B603E600038C575 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,7 +342,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42FD679F1B603E600038C575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42FD67A81B603E600038C575 /* AlecrimCoreData_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42FD67AB1B603E600038C575 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14CCE8C11AC10F4600AE47F1 /* AlecrimCoreData */;
+			targetProxy = 42FD67AA1B603E600038C575 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		14CCE8B51AC10E5500AE47F1 /* Debug */ = {
@@ -393,6 +498,43 @@
 			};
 			name = Release;
 		};
+		42FD67AC1B603E600038C575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AlecrimCoreData Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		42FD67AD1B603E600038C575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "AlecrimCoreData Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,6 +552,15 @@
 			buildConfigurations = (
 				14CCE8D61AC10F4600AE47F1 /* Debug */,
 				14CCE8D71AC10F4600AE47F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42FD67AE1B603E600038C575 /* Build configuration list for PBXNativeTarget "AlecrimCoreData Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42FD67AC1B603E600038C575 /* Debug */,
+				42FD67AD1B603E600038C575 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
