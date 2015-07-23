@@ -138,6 +138,7 @@
 		144826F21A2BE7B000DA53F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Alecrim;
 				TargetAttributes = {

@@ -1,5 +1,5 @@
 //
-//  AlecrimCoreData_Tests.swift
+//  StackSpec.swift
 //  AlecrimCoreData Tests
 //
 //  Created by Yury Lapitsky on 23.07.15.

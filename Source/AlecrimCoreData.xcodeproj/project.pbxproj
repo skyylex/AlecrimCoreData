@@ -24,10 +24,12 @@
 		1464BD2E1B20FAB5007CD240 /* NSPredicateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1464BD2D1B20FAB5007CD240 /* NSPredicateExtensions.swift */; };
 		149733741B21F716000A0EDE /* FetchAsyncHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149733731B21F716000A0EDE /* FetchAsyncHandler.swift */; };
 		14CCE9261AC114DD00AE47F1 /* AlecrimCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CCE8A61AC10E5500AE47F1 /* AlecrimCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42FD67A81B603E600038C575 /* AlecrimCoreData_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD67A71B603E600038C575 /* AlecrimCoreData_Tests.swift */; };
-		42FD67A91B603E600038C575 /* AlecrimCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CCE8C21AC10F4600AE47F1 /* AlecrimCoreData.framework */; };
-		42FD67B11B6043220038C575 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD67AF1B6043220038C575 /* Nimble.framework */; };
-		42FD67B31B6044980038C575 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD67B01B6043220038C575 /* Quick.framework */; };
+		428861251B60FAA100399129 /* ContextOptionsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428861241B60FAA100399129 /* ContextOptionsSpec.swift */; };
+		42D3020B1B61028700BE6887 /* AlecrimCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CCE8C21AC10F4600AE47F1 /* AlecrimCoreData.framework */; };
+		42D3020C1B61029600BE6887 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD67AF1B6043220038C575 /* Nimble.framework */; };
+		42D3020D1B61029600BE6887 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD67B01B6043220038C575 /* Quick.framework */; };
+		42D3020F1B61059100BE6887 /* SwiftSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3020E1B61059100BE6887 /* SwiftSpec.swift */; };
+		42FD67A81B603E600038C575 /* StackSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD67A71B603E600038C575 /* StackSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +62,11 @@
 		14CCE8A51AC10E5500AE47F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14CCE8A61AC10E5500AE47F1 /* AlecrimCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlecrimCoreData.h; sourceTree = "<group>"; };
 		14CCE8C21AC10F4600AE47F1 /* AlecrimCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlecrimCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		428861241B60FAA100399129 /* ContextOptionsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextOptionsSpec.swift; sourceTree = "<group>"; };
+		42D3020E1B61059100BE6887 /* SwiftSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpec.swift; sourceTree = "<group>"; };
 		42FD67A31B603E600038C575 /* AlecrimCoreData Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AlecrimCoreData Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FD67A61B603E600038C575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42FD67A71B603E600038C575 /* AlecrimCoreData_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlecrimCoreData_Tests.swift; sourceTree = "<group>"; };
+		42FD67A71B603E600038C575 /* StackSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackSpec.swift; sourceTree = "<group>"; };
 		42FD67AF1B6043220038C575 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		42FD67B01B6043220038C575 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
 		4E4CC3B4073FAE22291D1A09 /* Pods_AlecrimCoreData_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlecrimCoreData_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,9 +84,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42FD67B31B6044980038C575 /* Quick.framework in Frameworks */,
-				42FD67B11B6043220038C575 /* Nimble.framework in Frameworks */,
-				42FD67A91B603E600038C575 /* AlecrimCoreData.framework in Frameworks */,
+				42D3020C1B61029600BE6887 /* Nimble.framework in Frameworks */,
+				42D3020D1B61029600BE6887 /* Quick.framework in Frameworks */,
+				42D3020B1B61028700BE6887 /* AlecrimCoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,8 +196,10 @@
 		42FD67A41B603E600038C575 /* AlecrimCoreData Tests */ = {
 			isa = PBXGroup;
 			children = (
-				42FD67A71B603E600038C575 /* AlecrimCoreData_Tests.swift */,
+				42FD67A71B603E600038C575 /* StackSpec.swift */,
+				428861241B60FAA100399129 /* ContextOptionsSpec.swift */,
 				42FD67A51B603E600038C575 /* Supporting Files */,
+				42D3020E1B61059100BE6887 /* SwiftSpec.swift */,
 			);
 			path = "AlecrimCoreData Tests";
 			sourceTree = "<group>";
@@ -272,6 +278,7 @@
 		14CCE8981AC10E5500AE47F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Alecrim;
 				TargetAttributes = {
@@ -346,7 +353,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42FD67A81B603E600038C575 /* AlecrimCoreData_Tests.swift in Sources */,
+				42D3020F1B61059100BE6887 /* SwiftSpec.swift in Sources */,
+				42FD67A81B603E600038C575 /* StackSpec.swift in Sources */,
+				428861251B60FAA100399129 /* ContextOptionsSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,8 +523,10 @@
 				);
 				INFOPLIST_FILE = "AlecrimCoreData Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -532,6 +543,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				VALID_ARCHS = "x86_64 arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
