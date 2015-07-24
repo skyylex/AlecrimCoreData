@@ -24,12 +24,13 @@
 		1464BD2E1B20FAB5007CD240 /* NSPredicateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1464BD2D1B20FAB5007CD240 /* NSPredicateExtensions.swift */; };
 		149733741B21F716000A0EDE /* FetchAsyncHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149733731B21F716000A0EDE /* FetchAsyncHandler.swift */; };
 		14CCE9261AC114DD00AE47F1 /* AlecrimCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CCE8A61AC10E5500AE47F1 /* AlecrimCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		428861251B60FAA100399129 /* ContextOptionsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428861241B60FAA100399129 /* ContextOptionsSpec.swift */; };
-		42D3020B1B61028700BE6887 /* AlecrimCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CCE8C21AC10F4600AE47F1 /* AlecrimCoreData.framework */; };
-		42D3020C1B61029600BE6887 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD67AF1B6043220038C575 /* Nimble.framework */; };
-		42D3020D1B61029600BE6887 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD67B01B6043220038C575 /* Quick.framework */; };
-		42D3020F1B61059100BE6887 /* SwiftSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3020E1B61059100BE6887 /* SwiftSpec.swift */; };
-		42FD67A81B603E600038C575 /* StackSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD67A71B603E600038C575 /* StackSpec.swift */; };
+		424AEC301B62547A00ECA52C /* ContextOptionsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428861241B60FAA100399129 /* ContextOptionsSpec.swift */; };
+		424AEC321B6254F300ECA52C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD67AF1B6043220038C575 /* Nimble.framework */; };
+		424AEC331B6254F300ECA52C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD67B01B6043220038C575 /* Quick.framework */; };
+		424AEC341B62848300ECA52C /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42FD67AF1B6043220038C575 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		424AEC351B62848300ECA52C /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 42FD67B01B6043220038C575 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		424AEC461B6284CC00ECA52C /* AlecrimCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CCE8C21AC10F4600AE47F1 /* AlecrimCoreData.framework */; };
+		424AEC471B6285D700ECA52C /* StackSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD67A71B603E600038C575 /* StackSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,20 @@
 			remoteInfo = AlecrimCoreData;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42A946FB1B6253E000E623F4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				424AEC341B62848300ECA52C /* Nimble.framework in CopyFiles */,
+				424AEC351B62848300ECA52C /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1451E0151B29F7BA00689C58 /* ALCFetchedResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALCFetchedResultsController.swift; sourceTree = "<group>"; };
@@ -63,7 +78,6 @@
 		14CCE8A61AC10E5500AE47F1 /* AlecrimCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlecrimCoreData.h; sourceTree = "<group>"; };
 		14CCE8C21AC10F4600AE47F1 /* AlecrimCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlecrimCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		428861241B60FAA100399129 /* ContextOptionsSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextOptionsSpec.swift; sourceTree = "<group>"; };
-		42D3020E1B61059100BE6887 /* SwiftSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpec.swift; sourceTree = "<group>"; };
 		42FD67A31B603E600038C575 /* AlecrimCoreData Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AlecrimCoreData Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FD67A61B603E600038C575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42FD67A71B603E600038C575 /* StackSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackSpec.swift; sourceTree = "<group>"; };
@@ -84,9 +98,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42D3020C1B61029600BE6887 /* Nimble.framework in Frameworks */,
-				42D3020D1B61029600BE6887 /* Quick.framework in Frameworks */,
-				42D3020B1B61028700BE6887 /* AlecrimCoreData.framework in Frameworks */,
+				424AEC461B6284CC00ECA52C /* AlecrimCoreData.framework in Frameworks */,
+				424AEC321B6254F300ECA52C /* Nimble.framework in Frameworks */,
+				424AEC331B6254F300ECA52C /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +213,6 @@
 				42FD67A71B603E600038C575 /* StackSpec.swift */,
 				428861241B60FAA100399129 /* ContextOptionsSpec.swift */,
 				42FD67A51B603E600038C575 /* Supporting Files */,
-				42D3020E1B61059100BE6887 /* SwiftSpec.swift */,
 			);
 			path = "AlecrimCoreData Tests";
 			sourceTree = "<group>";
@@ -261,6 +274,7 @@
 				42FD679F1B603E600038C575 /* Sources */,
 				42FD67A01B603E600038C575 /* Frameworks */,
 				42FD67A11B603E600038C575 /* Resources */,
+				42A946FB1B6253E000E623F4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -353,9 +367,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42D3020F1B61059100BE6887 /* SwiftSpec.swift in Sources */,
-				42FD67A81B603E600038C575 /* StackSpec.swift in Sources */,
-				428861251B60FAA100399129 /* ContextOptionsSpec.swift in Sources */,
+				424AEC471B6285D700ECA52C /* StackSpec.swift in Sources */,
+				424AEC301B62547A00ECA52C /* ContextOptionsSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

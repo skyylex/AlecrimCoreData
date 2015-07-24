@@ -10,16 +10,6 @@ import Quick
 import Nimble
 import AlecrimCoreData
 
-private let dataContext = DataContext()!
-
-private class DataContext: Context {
-    var people: Table<Account> { return Table<Account>(context: self) }
-}
-
-private class Account: NSManagedObject {
-    @NSManaged var title: String?
-}
-
 class ContextOptionsSpec: QuickSpec {
     override func spec() {
         describe("ContextOptionsSpec") {
@@ -30,6 +20,30 @@ class ContextOptionsSpec: QuickSpec {
                     expect(contextOptionsWithDefaults.stackType == StackType.SQLite)
                     expect(contextOptionsWithDefaults.managedObjectModelName == nil)
                     expect(contextOptionsWithDefaults.storeOptions == nil)
+                }
+                
+                it("all default options") {
+                    let contextOptionsWithDefaults = ContextOptions()
+                    
+                    expect(contextOptionsWithDefaults.stackType == StackType.SQLite)
+                    expect(contextOptionsWithDefaults.managedObjectModelName == nil)
+                    expect(contextOptionsWithDefaults.storeOptions == nil)
+                }
+                
+                it("custom options options") {
+                    let key = "key"
+                    let value = "value"
+                    let customStoreOptions = [key : value]
+                    let customModelName = "customModelName"
+                    let customStackType = StackType.InMemory
+                    
+                    let contextOptionsWithDefaults = ContextOptions(stackType: customStackType, managedObjectModelName:customModelName, storeOptions:customStoreOptions)
+                    
+                    expect(contextOptionsWithDefaults.stackType == customStackType)
+                    expect(contextOptionsWithDefaults.managedObjectModelName == customModelName)
+                    expect(contextOptionsWithDefaults.storeOptions.count == customStoreOptions.count)
+                    let storedValue = contextOptionsWithDefaults.storeOptions[key] as? NSString
+                    expect(storedValue?.compare(value))
                 }
             }
         }
